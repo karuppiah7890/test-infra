@@ -1,0 +1,26 @@
+postsubmits:
+  vagator/test-prow:
+  - name: test-postsubmit
+    decorate: true
+    spec:
+      containers:
+      - image: alpine
+        command: ["/bin/printenv"]
+presubmits:
+  vagator/test-prow:
+  - name: testing-presubmit
+    decorate: true
+    always_run: true
+    skip_report: true
+    spec:
+      containers:
+      - image: alpine
+        command: ["/bin/date"]
+periodics:
+- interval: 10m
+  name: echo-test-4
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
