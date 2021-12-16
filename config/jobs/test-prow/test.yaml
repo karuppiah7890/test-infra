@@ -15,7 +15,7 @@ presubmits:
     spec:
       containers:
       - image: alpine
-        command: ["/bin/date"]
+        command: ["/bin/printenv"]
 periodics:
 - interval: 10m
   name: echo-test-4
