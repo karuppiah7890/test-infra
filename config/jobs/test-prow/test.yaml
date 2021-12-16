@@ -15,7 +15,7 @@ presubmits:
     spec:
       containers:
       - image: alpine
-        command: ["/bin/printenv"]
+        command: ["echo HELLLO && /bin/printenv"]
 periodics:
 - interval: 10m
   name: echo-test-4
