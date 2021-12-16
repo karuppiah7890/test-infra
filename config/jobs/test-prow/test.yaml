@@ -8,7 +8,7 @@ postsubmits:
         command: ["/bin/printenv"]
 presubmits:
   vagator/test-prow:
-  - name: testing-presubmit
+  - name: test-presubmit
     decorate: true
     always_run: true
     skip_report: true
