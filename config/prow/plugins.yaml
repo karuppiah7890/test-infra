@@ -78,7 +78,6 @@ plugins:
     - assign
     - cat
     - cla
-    - config-updater
     - dog
     - golint
     - goose
@@ -100,3 +99,7 @@ plugins:
     - welcome
     - wip
     - yuks
+
+  vagator/test-infra:
+    plugins:
+    - config-updater
