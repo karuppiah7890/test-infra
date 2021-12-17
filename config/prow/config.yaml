@@ -120,4 +120,3 @@ github_reporter:
   job_types_to_report:
   - presubmit
   - postsubmit
-
