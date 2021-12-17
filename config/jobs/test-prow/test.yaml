@@ -11,7 +11,6 @@ presubmits:
   - name: test-presubmit
     decorate: true
     always_run: true
-    skip_report: true
     spec:
       containers:
       - image: alpine
