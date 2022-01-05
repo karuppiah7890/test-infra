@@ -15,3 +15,20 @@ presubmits:
       containers:
       - image: alpine
         command: ["/bin/printenv"]
+periodics:
+- name: default-cluster
+  cluster: default
+  interval: 10m
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
+- name: test-cluster
+  cluster: test-jobs
+  interval: 10m
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
