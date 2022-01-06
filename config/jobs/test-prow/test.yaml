@@ -17,7 +17,7 @@ presubmits:
         command: ["/bin/printenv"]
 periodics:
 - name: default-cluster
-  cluster: default
+  cluster: test
   interval: 10m
   decorate: true
   spec:
