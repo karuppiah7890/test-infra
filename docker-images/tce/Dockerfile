@@ -26,4 +26,8 @@ RUN apt update
 
 RUN apt install -y docker-ce docker-ce-cli containerd.io
 
-ENTRYPOINT entrypoint.sh
+WORKDIR /workdir
+
+COPY entrypoint.sh entrypoint.sh
+
+ENTRYPOINT /workdir/entrypoint.sh
