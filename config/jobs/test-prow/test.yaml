@@ -16,7 +16,7 @@ presubmits:
       - image: alpine
         command: ["/bin/printenv"]
 periodics:
-- name: test-default-cluster
+- name: default-cluster
   cluster: default
   interval: 10m
   decorate: true
@@ -24,7 +24,7 @@ periodics:
     containers:
     - image: alpine
       command: ["/bin/date"]
-- name: test-jobs-cluster
+- name: jobs-cluster
   cluster: test-jobs
   interval: 10m
   decorate: true
