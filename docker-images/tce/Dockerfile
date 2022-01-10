@@ -30,4 +30,6 @@ WORKDIR /workdir
 
 COPY entrypoint.sh entrypoint.sh
 
+RUN apt install -y zip
+
 ENTRYPOINT /workdir/entrypoint.sh
