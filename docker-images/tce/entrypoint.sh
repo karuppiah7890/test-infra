@@ -9,7 +9,7 @@ temp_dir=$(mktemp -d)
 
 pushd $temp_dir
 
-git clone https://github.com/vmware-tanzu/community-edition/
+git clone https://github.com/vmware-tanzu/community-edition
 
 pushd community-edition
 
