@@ -1,0 +1,9 @@
+periodics:
+  - name: tce-aws-management-and-workload-cluster-e2e
+    cluster: default
+    interval: 24h
+    decorate: true
+    spec:
+      containers:
+        - image: tce-aws-management-and-workload-cluster-e2e
+  

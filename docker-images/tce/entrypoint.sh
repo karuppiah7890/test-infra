@@ -17,7 +17,7 @@ pushd community-edition
 
 ./test/install-dependencies.sh
 
-# run docker management + workload cluster test like this -
-# ./test/docker/run-tce-docker-managed-cluster.sh
+# run aws management + workload cluster test like this -
+# test/aws/deploy-tce-managed.sh
 # or use below make target! :)
-make docker-management-and-cluster-e2e-test
+make aws-management-and-workload-cluster-e2e-test

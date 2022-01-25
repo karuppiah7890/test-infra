@@ -1,6 +1,6 @@
 # image has golang, git, make.
 # image is based on debian
-FROM golang:1.16
+FROM golang:1.17.6
 
 # TODO: too many layers (RUN commands) to install Docker. Use just one RUN
 # command and one layer and remove all unnecessary content / cache :) to
