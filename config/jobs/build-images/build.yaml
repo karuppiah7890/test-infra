@@ -8,7 +8,7 @@ postsubmits:
     spec:
       containers:
       - name: docker-build
-        image: harbor-repo.vmware.com/dockerhub-proxy-cache/library/docker:20.10.12-dind
+        image: docker:20.10.12-dind
         command:
         - ./scripts/ci-docker-build-image.sh
         args:
@@ -38,7 +38,7 @@ periodics:
   spec:
     containers:
     - name: docker-build
-      image: harbor-repo.vmware.com/dockerhub-proxy-cache/library/docker:20.10.12-dind
+      image: docker:20.10.12-dind
       command:
       - ./scripts/ci-docker-build-image.sh
       args:
